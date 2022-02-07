@@ -1,0 +1,42 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    height: 1vh;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+    height: 80%;
+}
+
+.block{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 0 40px 0 40px;
+}
+
+.orange_block{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.softgreen_block{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.green_block{
+    background-color: hsl(179, 100%, 13%);
+}
